@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Friendly Component
+MimeType=text/calendar;
+X-KDE-ServiceTypes=KParts/ReadOnlyPart,KParts/ReadWritePart
+X-KDE-Library=textuipart
+Type=Service

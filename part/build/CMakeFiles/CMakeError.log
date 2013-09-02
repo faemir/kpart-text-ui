@@ -1,0 +1,152 @@
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1038937730/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1038937730.dir/build.make CMakeFiles/cmTryCompileExec1038937730.dir/build
+make[1]: Entering directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1038937730.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1038937730.dir/CheckSymbolExists.c.o   -c /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘Q_WS_WIN’ undeclared (first use in this function)
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTryCompileExec1038937730.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1038937730/fast] Error 2
+
+File /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2466573765/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2466573765.dir/build.make CMakeFiles/cmTryCompileExec2466573765.dir/build
+make[1]: Entering directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2466573765.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2466573765.dir/CheckSymbolExists.c.o   -c /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘Q_WS_QWS’ undeclared (first use in this function)
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTryCompileExec2466573765.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2466573765/fast] Error 2
+
+File /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec9641976/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec9641976.dir/build.make CMakeFiles/cmTryCompileExec9641976.dir/build
+make[1]: Entering directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec9641976.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec9641976.dir/CheckSymbolExists.c.o   -c /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘Q_WS_MAC’ undeclared (first use in this function)
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: Leaving directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec9641976.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec9641976/fast] Error 2
+
+File /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec142394410/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec142394410.dir/build.make CMakeFiles/cmTryCompileExec142394410.dir/build
+make[1]: Entering directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec142394410.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec142394410.dir/CheckSymbolExists.c.o   -c /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec142394410
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec142394410.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec142394410.dir/CheckSymbolExists.c.o  -o cmTryCompileExec142394410 -rdynamic 
+CMakeFiles/cmTryCompileExec142394410.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec142394410] Error 1
+make: *** [cmTryCompileExec142394410/fast] Error 2
+
+File /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1251703251/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1251703251.dir/build.make CMakeFiles/cmTryCompileExec1251703251.dir/build
+make[1]: Entering directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1251703251.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1251703251.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1251703251
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1251703251.dir/link.txt --verbose=1
+/usr/bin/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1251703251.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1251703251 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1251703251] Error 1
+make: *** [cmTryCompileExec1251703251/fast] Error 2
+
+
