@@ -1,3 +1,0 @@
-/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/textuipart.dir
-/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/textuipart_automoc.dir
-/home/dan/Dev/KDE/kpart-ktp-text-ui/part/build/CMakeFiles/uninstall.dir

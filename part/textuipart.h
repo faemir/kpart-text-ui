@@ -5,7 +5,7 @@
 #include <kparts/factory.h>
 #include <QLabel>
 
-//#include "chat-widget.h"
+#include "chat-widget.h"
 
 class textUIPart : public KParts::ReadWritePart
 {

@@ -23,7 +23,7 @@ MainWindow::MainWindow()
     setupActions();
  
     //query the .desktop file to load the requested Part
-    KService::Ptr service = KService::serviceByDesktopPath(QString::fromLatin1("hello_part.desktop"));
+    KService::Ptr service = KService::serviceByDesktopPath(QString::fromLatin1("textuipart.desktop"));
  
     if (service)
     {
@@ -49,7 +49,7 @@ MainWindow::MainWindow()
     {
         // if we couldn't find our Part, we exit since the Shell by
         // itself can't do anything useful
-        KMessageBox::error(this, "service hellopart not found");
+        //KMessageBox::error(this, "service hellopart not found");
         qApp->quit();
         // we return here, cause qApp->quit() only means "exit the
         // next time we enter the event loop...

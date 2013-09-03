@@ -165,6 +165,7 @@ void TelepathyChatUi::handleChannels(const Tp::MethodInvocationContextPtr<> & co
 
         Q_ASSERT(window);
 
+	//replace these three lines  with an instance of the part inside a window (maybe kmainwindow or qmainwindow)
         ChatTab* tab = new ChatTab(textChannel, account);
         tab->setChatWindow(window);
         window->show();

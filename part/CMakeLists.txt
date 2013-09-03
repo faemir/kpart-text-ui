@@ -1,14 +1,4 @@
-project(textui)
-find_package (KDE4 REQUIRED)
-INCLUDE_DIRECTORIES( ${KDE4_INCLUDES} . )
-
-# ok, now this looks better. Save the file and try to build it (use "Save a local copy")
-# yay it worked
-
-set(textui_shared_SRCS
-        textuipart.cpp
- )
-
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/lib ${KDE4_INCLUDES} . )
 
 set(textuipart_PART_SRCS textuipart.cpp)
 
