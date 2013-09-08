@@ -21,10 +21,14 @@
 #include "chat-tab.h"
 #include "chat-window.h"
 #include "text-chat-config.h"
+#include <kmainwindow.h>
+#include "textuipart.h"
 
 #include <KDebug>
 #include <KConfigGroup>
 #include <KWindowSystem>
+#include <kservice.h>
+
 
 #include <TelepathyQt/ChannelClassSpec>
 #include <TelepathyQt/TextChannel>
@@ -169,8 +173,16 @@ void TelepathyChatUi::handleChannels(const Tp::MethodInvocationContextPtr<> & co
         ChatTab* tab = new ChatTab(textChannel, account);
         tab->setChatWindow(window);
         window->show();
-
-        if (windowRaise) {
+	
+	KMainWindow* mainWindow = new KMainWindow();
+	//mainWindow->setCentralWidget(new textUIPart(0, this, QVariantList()));  
+	KService::Ptr service = KService::serviceByDesktopPath(QString::fromLatin1("textuipart.desktop"));
+	KParts::Part *m_part;
+	m_part = service->createInstance<KParts::Part>(0);
+	mainWindow->setCentralWidget(m_part->widget());
+	mainWindow->show();
+        
+	if (windowRaise) {
             KWindowSystem::forceActiveWindow(window->winId());
         }
     }

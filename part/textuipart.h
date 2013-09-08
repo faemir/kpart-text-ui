@@ -7,7 +7,7 @@
 
 #include "chat-widget.h"
 
-class textUIPart : public KParts::ReadWritePart
+class textUIPart : public KParts::Part
 {
   Q_OBJECT
 
@@ -17,11 +17,9 @@ class textUIPart : public KParts::ReadWritePart
 public:
     textUIPart(QWidget *parentWidget, QObject *parent, const QVariantList&);
 
-    QLabel* MainWidget() { return mMainWidget; };
-
     virtual ~textUIPart();
-    bool openFile(){return "hello";};
-    bool saveFile(){return "hello";};
+    bool openFile(){return true;};
+    bool saveFile(){return true;};
 };
 
 #endif // _TEXTUIPART_H_

@@ -25,6 +25,7 @@ target_link_libraries(ktp-text-ui
             ${KDE4_KNOTIFYCONFIG_LIBS}
             ${KDE4_KCMUTILS_LIBS}
             ${KDEPIMLIBS_KPIMTEXTEDIT_LIBS}
+             ${KDE4_KPARTS_LIBS}
             ktpchat)
 
 configure_file(org.freedesktop.Telepathy.Client.KTp.TextUi.service.in
