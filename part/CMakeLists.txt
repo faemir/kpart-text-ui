@@ -4,7 +4,7 @@ set(textuipart_PART_SRCS textuipart.cpp)
 
 kde4_add_plugin(textuipart ${textuipart_PART_SRCS})
 
-target_link_libraries(textuipart ${KDE4_KPARTS_LIBS})
+target_link_libraries(textuipart ${KDE4_KPARTS_LIBS} ktpchat)
 
 install(TARGETS textuipart  DESTINATION ${PLUGIN_INSTALL_DIR})
 

@@ -34,7 +34,7 @@ Tp::TextChannelPtr textchannel = args[1].value<Tp::TextChannelPtr>();
   
 QWidget* myMainWidget = new QWidget();
 myMainWidget->setLayout(new QVBoxLayout());
-myMainWidget->layout()->addWidget(new ChatWidget(Tp::TextChannelPtr& channel, Tp::AccountPtr& account, parent));
+myMainWidget->layout()->addWidget(new ChatWidget(textchannel, account, myMainWidget));
 setWidget(myMainWidget);
   
 }

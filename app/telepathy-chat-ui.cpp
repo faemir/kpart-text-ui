@@ -22,7 +22,9 @@
 #include "chat-window.h"
 #include "text-chat-config.h"
 #include <kmainwindow.h>
-#include "textuipart.h"
+
+//#include "textuipart.h"
+#include "/home/dan/Dev/KDE/kpart-ktp-text-ui/part/textuipart.h"
 
 #include <KDebug>
 #include <KConfigGroup>
