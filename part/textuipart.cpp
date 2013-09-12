@@ -25,7 +25,7 @@ textUIPart::textUIPart( QWidget *parentWidget, QObject *parent, const QVariantLi
 //   setWidget( mMainWidget );
   
 Tp::AccountPtr account = args[0].value<Tp::AccountPtr>();
-Tp::TextChannelPtr textchannel = args[1].value<Tp::TextChannelPtr>();
+Tp::TextChannelPtr textChannel = args[1].value<Tp::TextChannelPtr>();
 
 //     if (account.isNull()) {
 //         kDebug() << "Account is nulled";
@@ -34,7 +34,7 @@ Tp::TextChannelPtr textchannel = args[1].value<Tp::TextChannelPtr>();
   
 QWidget* myMainWidget = new QWidget();
 myMainWidget->setLayout(new QVBoxLayout());
-myMainWidget->layout()->addWidget(new ChatWidget(textchannel, account, myMainWidget));
+myMainWidget->layout()->addWidget(new ChatWidget(textChannel, account, myMainWidget));
 setWidget(myMainWidget);
   
 }

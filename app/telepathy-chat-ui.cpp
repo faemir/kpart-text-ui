@@ -26,6 +26,7 @@
 //#include "textuipart.h"
 #include "/home/dan/Dev/KDE/kpart-ktp-text-ui/part/textuipart.h"
 
+#include <KTp/types.h>
 #include <KDebug>
 #include <KConfigGroup>
 #include <KWindowSystem>
@@ -172,15 +173,28 @@ void TelepathyChatUi::handleChannels(const Tp::MethodInvocationContextPtr<> & co
         Q_ASSERT(window);
 
 	//replace these three lines  with an instance of the part inside a window (maybe kmainwindow or qmainwindow)
-        ChatTab* tab = new ChatTab(textChannel, account);
-        tab->setChatWindow(window);
-        window->show();
+//         ChatTab* tab = new ChatTab(textChannel, account);
+//         tab->setChatWindow(window);
+//         window->show();
 	
 	KMainWindow* mainWindow = new KMainWindow();
 	//mainWindow->setCentralWidget(new textUIPart(0, this, QVariantList()));  
 	KService::Ptr service = KService::serviceByDesktopPath(QString::fromLatin1("textuipart.desktop"));
 	KParts::Part *m_part;
-	m_part = service->createInstance<KParts::Part>(0);
+	QVariantList args;
+	QVariant storeChan;
+	QVariant storeAcc;
+	storeChan.setValue(textChannel);
+	storeAcc.setValue(account);
+	args.append(storeAcc);
+	args.append(storeChan);
+	
+// 	args[0].setValue(textChannel);
+// 	args[1].setValue(account);
+	//args.append(textChannel);
+	//args.append(account);
+	m_part = service->createInstance<KParts::Part>(0,  args);
+	
 	mainWindow->setCentralWidget(m_part->widget());
 	mainWindow->show();
         
